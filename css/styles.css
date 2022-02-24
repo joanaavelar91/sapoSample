@@ -1,0 +1,334 @@
+.pageContainer {
+  padding: 100px 30px 100px 60px;
+  height: 4000px;
+}
+
+/********* First section ************
+
+
+****/
+
+.firstSectionContainer {
+  background: #ccc url("../img/headerImg.png") no-repeat;
+  background-size: 100%, 100%;
+  min-height: 30%;
+  max-height: 20%;
+}
+
+.logo {
+  width: 150px;
+  height: 70px;
+  top: 119px;
+  left: 188px;
+  /* UI Properties */
+  opacity: 1;
+}
+
+/*** Multi Button  ***/
+
+.buttonContainer {
+  padding-top: 30px;
+}
+
+.bodyButtonContainer {
+  top: 200px;
+  position: relative;
+  padding-left: 30px;
+}
+
+.buttonContainer button {
+  background: none;
+  border: 0;
+  color: #000;
+  margin-right: 60px;
+  text-align: left;
+  font: normal normal bold 26px/31px Roboto;
+}
+
+.buttonContainer button:active,
+.buttonContainer button:hover {
+  color: #fff;
+  background: #000;
+}
+
+/*** Rectangle Buttons ***/
+
+.bodyButtonContainer button {
+  width: 117px;
+  height: 117px;
+  /* UI Properties */
+  background: #ff9933 0% 0% no-repeat padding-box;
+  opacity: 1;
+  border: 0;
+  margin-right: 30px;
+}
+
+.bodyButtonContainer button.selected {
+  width: 163px;
+  height: 163px;
+}
+
+.bodyButtonContainer .middleButton {
+  background-color: #33cc99;
+}
+
+.bodyButtonContainer .rightButton {
+  background-color: #3399cc;
+}
+
+/*** Elems Triangles, Rectangles and Circles ***/
+
+.bodyElemContainer.rightButton .circOne,
+.bodyElemContainer.rightButton .circTwo,
+.bodyElemContainer.rightButton .recOne,
+.bodyElemContainer.rightButton .recTwo {
+  border: 6px solid #3399cc;
+}
+
+.bodyElemContainer.rightButton .triOne {
+  border-left: 111px solid #3399cc;
+}
+.bodyElemContainer.rightButton .triTwo {
+  border-left: 68px solid #3399cc;
+}
+
+.bodyElemContainer.leftButton .circOne,
+.bodyElemContainer.leftButton .circTwo,
+.bodyElemContainer.leftButton .recOne,
+.bodyElemContainer.leftButton .recTwo {
+  border: 6px solid #ff9933;
+}
+
+.bodyElemContainer.leftButton .triOne {
+  border-left: 111px solid #ff9933;
+}
+.bodyElemContainer.leftButton .triTwo {
+  border-left: 68px solid #ff9933;
+}
+
+.circOne {
+  top: 200px;
+  left: 177px;
+  width: 158px;
+  height: 158px;
+  border: 6px solid #33cc99;
+  opacity: 1;
+  border-radius: 50%;
+  position: relative;
+}
+
+.circTwo {
+  top: 50px;
+  left: 300px;
+  width: 88px;
+  height: 88px;
+  border: 6px solid #33cc99;
+  opacity: 1;
+  border-radius: 50%;
+  position: relative;
+}
+
+.recOne {
+  top: 128px;
+  left: 182px;
+  width: 88px;
+  height: 130px;
+  transform: matrix(-0.87, 0.5, -0.5, -0.87, 0, 0);
+  border: 6px solid #33cc99;
+  opacity: 1;
+  position: relative;
+}
+
+.recTwo {
+  top: 0px;
+  left: 550px;
+  width: 88px;
+  height: 130px;
+  transform: matrix(-0.87, 0.5, -0.5, -0.87, 0, 0);
+  border: 6px solid #33cc99;
+  opacity: 1;
+  position: relative;
+}
+
+.triOne {
+  top: 400px;
+  width: 0;
+  height: 0;
+  border-top: 0px solid transparent;
+  border-left: 111px solid #33cc99;
+  border-bottom: 83px solid transparent;
+  position: relative;
+}
+
+.triTwo {
+  top: 200px;
+  left: 416px;
+  width: 0;
+  height: 0;
+  border-top: 59px solid transparent;
+  border-left: 68px solid #33cc99;
+  border-bottom: 1px solid transparent;
+  opacity: 1;
+  position: relative;
+}
+
+.logoBig {
+  width: 834px;
+  height: 515px;
+  /* UI Properties */
+  opacity: 1;
+  position: relative;
+  z-index: 1;
+}
+
+/********* END First section *******/
+
+/*********  Second section ************
+
+
+****/
+
+.secondSectionContainer {
+  background: #e5e5e5;
+  min-height: 30%;
+  max-height: 60%;
+  padding: 100px;
+}
+
+.sectionTitle {
+  text-align: center;
+  font: normal normal 900 90px/108px Roboto;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+
+.secondCircContainer {
+  margin-bottom: 50px;
+}
+
+/*** Sapo Text Image section **/
+
+.sapoContainer {
+  width: 255px;
+  height: 607px;
+  background: transparent url(../img/sapo.png) 0% 0% no-repeat padding-box;
+  opacity: 1;
+  position: absolute;
+  background-size: 100%, 100%;
+  z-index: 1;
+}
+
+.circSapo {
+  width: 633px;
+  height: 633px;
+  /* UI Properties */
+  border: 6px dashed #33cc99;
+  opacity: 1;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.sapoInfo {
+  /* UI Properties */
+  text-align: left;
+  font: normal normal bold 48px/58px Roboto;
+  letter-spacing: 0px;
+  color: #666666;
+  position: relative;
+  z-index: 1;
+  overflow-wrap: anywhere;
+  max-width: 700px;
+}
+
+.collapseButton {
+  width: 150px;
+  height: 16px;
+  /* UI Properties */
+  opacity: 1;
+  border: 0;
+  background: none;
+  font-weight: bold;
+}
+
+.visibilityText {
+  visibility: hidden;
+}
+
+.hideText {
+  display: none;
+}
+
+/*** Links section **/
+
+.linkContainer a {
+  color: #fff;
+  width: 197px;
+  height: 50px;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.linkContainerCol {
+  margin-bottom: 50px;
+}
+
+.linkFirst {
+  background: #5b8f22;
+}
+
+.linkSecond {
+  background: #7ab800;
+}
+
+/********* END Second section *******/
+
+/*********  Third section ************
+
+
+****/
+
+.thirdSectionContainer {
+  height: 20%;
+}
+
+.formContainer {
+  width: 511px;
+  height: 546px;
+  /* UI Properties */
+  background: #cccccc 0% 0% no-repeat padding-box;
+  padding: 100px;
+}
+
+.formContainer input {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 6px solid #000000;
+  margin-bottom: 15px;
+  background: none;
+}
+.formContainer label {
+  font: normal normal bold 40px/48px Roboto;
+  letter-spacing: 0px;
+  color: #000000;
+}
+
+.formContainer label.warningMessage {
+  font: normal normal bold 14px Roboto;
+  color: red;
+}
+
+.formContainer button {
+  color: #fff;
+  width: 197px;
+  height: 50px;
+  padding: 10px;
+  background: #7ab800;
+  border: 0;
+}
+
+.formContainer button.submitButton:disabled {
+  background: grey;
+}
+/********* END Third section *******/

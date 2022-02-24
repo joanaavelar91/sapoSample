@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script
+      type="text/javascript"
+      src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    ></script>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="pageContainer">
+      <div class="firstSectionContainer">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                 <img src="img/logo.png" alt="logo" class="logo" />
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 buttonContainer">
+                
+                <button>Loren</button>
+                <button>Ipsum</button>
+                <button>Dolore</button>
+                
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+        <div class="bodyButtonContainer">
+          <button class="leftButton" onclick="bodyButtonClick(event)"></button>
+          <button
+            class="middleButton selected"
+            onclick="bodyButtonClick(event)"
+          ></button>
+          <button class="rightButton" onclick="bodyButtonClick(event)"></button>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="bodyElemContainer middleButton">
+            <div class="circOne"></div>
+            <div class="triOne"></div>
+            <div class="triTwo"></div>
+            <div class="recOne"></div>
+            <div class="recTwo"></div>
+           <div class="circTwo"></div>
+        </div>
+    </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="imageBigContainer">
+          <img src="img/logo.png" alt="logo" class="logoBig" />
+        </div>
+    </div>
+    </div>
+    </div>
+      </div>
+
+      <div class="secondSectionContainer">
+        <div class="sectionTitle">
+          <h1>SAPO</h1>
+        </div>
+        <div class="row secondCircContainer">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                <div class="circSapo"></div>
+                <div class="sapoContainer"></div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                <span class="sapoInfo">
+                    Estamos consigo desde 1995, mas ainda mal começámos a tocar o
+                    futuro.
+                    <br />
+                    Apostamos na credibilidade, na criatividade, na inovação, na
+                    tecnologia e na proximidade. Somos o SAPO, vamos tornar a sua vida
+                    mais simples, mais informada, mais divertida, mais prática, aqui e
+                    em todo o mundo. Queremos estar na sua vida.
+                </span>
+                <button class="collapseButton" onclick="collapseText()">
+                    Esconder texto
+                </button>
+            </div>
+      </div>
+      <div class="row linkContainer">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 linkContainerCol">
+            <a
+            class="linkFirst"
+            href="https://rd3.videos.sapo.pt/bRi3wOIOTyf2cWDtNkpj?jwsource=cl"
+            target="_blank"
+            >Manifesto</a
+        >
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 linkContainerCol">
+            <a
+                class="linkSecond"
+                href="https://rd3.videos.sapo.pt/niJFYO47fFYMVA638E6a?jwsource=cl"
+                target="_blank"
+                >O sapo deu o salto</a
+            >
+        </div>
+    </div>
+    </div>
+    <div class="thirdSectionContainer">
+      <div class="sectionTitle">
+        <h1 class="sectionTitleH1">Deu 0 saltos</h1>
+      </div>
+      <div class="formContainer">
+        <label for="xName">X</label>
+        <input
+          type="text"
+          id="xValue"
+          name="xValue"
+          value=""
+          onchange="validateXValue(event)"
+        />
+        <label class="xWarning warningMessage hideText"
+          >X tem de ser um inteiro e superior ou igual a Y! Quando o rectangulo
+          verde está seleccionado X = 3 and quando o azul X <=7.</label
+        >
+        <br /><label for="yName">Y</label>
+        <input
+          type="text"
+          id="yValue"
+          name="yValue"
+          value=""
+          onchange="yValueOnChange(event)"
+        />
+        <label class="yWarning warningMessage hideText"
+          >Y tem de ser um inteiro e superior ou igual a X!</label
+        >
+        <br /><label for="dName">D</label>
+        <input
+          type="text"
+          id="dValue"
+          name="dValue"
+          value=""
+          onchange="dValueOnChange(event)"
+        />
+        <label class="dWarning warningMessage hideText"
+          >D tem de ser um inteiro!</label
+        >
+        <br /><button class="submitButton" disabled onclick="submitFunc()">
+          Dá o salto
+        </button>
+      </div>
+    </div>
+    <script src="js/formFuncs.js"></script>
+    <script src="js/firstSecondSectionFuncs.js"></script>
+  </body>
+</html>
